@@ -7,6 +7,9 @@ import { usuario } from '../interfaces/interface';
   providedIn: 'root'
 })
 export class FormularioService {
+  splice(id: number) {
+    throw new Error('Method not implemented.');
+  }
 
 url="https://jsonplaceholder.typicode.com/users"
 

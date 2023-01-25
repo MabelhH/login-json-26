@@ -35,6 +35,7 @@ export class HomeComponent implements OnInit{
     for(let i = 0 ; i < this.datos.length;i++){
       if(this.datos[i].usermane == this.formRegister.get('username')?.value && this.datos[i].email==this.formRegister.get('password')?.value){
         localStorage.setItem('logueado','true')
+        this.router.navigate(['/prueva'])
         break
       
       }else{
@@ -42,6 +43,8 @@ export class HomeComponent implements OnInit{
       }
     }
    console.log(localStorage.getItem('logueado'))
+   
   }
+ 
 
 }

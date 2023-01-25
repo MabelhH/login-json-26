@@ -19,4 +19,7 @@ export class PruevaComponent implements OnInit {
   mostrar(id:number){
     this.router.navigate(['/mostar',id])
   }
+  eliminar(id:number){
+    this.input.splice(id,1)
+   }
 }

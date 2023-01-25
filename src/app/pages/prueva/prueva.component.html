@@ -7,15 +7,18 @@
         <th scope="col">Username</th>
         <th scope="col">Email</th>
         <th scope="col"></th>
+        <th scope="col"></th>
+        
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let i of input">
-        <td>{{i.id}}</td>
-        <td>{{i.name}}</td>
-        <td>{{i.username}}</td>
-        <td>{{i.email}}</td>
-        <td><button class="boton" (click)="mostrar(i.id)">mostrar</button></td>
+      <tr *ngFor="let inp of input;let i=index">
+        <td>{{inp.id}}</td>
+        <td>{{inp.name}}</td>
+        <td>{{inp.username}}</td>
+        <td>{{inp.email}}</td>
+        <td><button type="button" class="btn btn-secondary" (click)="mostrar(inp.id)">Mostrar</button></td>
+        <td><button type="button" class="btn btn-primary" (click)="eliminar(inp)">Eliminar</button></td>
       </tr>
     </tbody>
   </table> 
