@@ -11,7 +11,7 @@ const routes: Routes = [
    {path:'login',component:HomeComponent},
   {path:'mostar/:id',component:MostarComponent},
   {path:'prueva',component:PruevaComponent ,canActivate:[UsuarioGuard]},
-  {path:'',redirectTo:'home',pathMatch:'full'}
+  {path:'',redirectTo:'login',pathMatch:'full'}
 ];
 
 @NgModule({
