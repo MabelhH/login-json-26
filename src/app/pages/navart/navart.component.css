@@ -1,0 +1,17 @@
+nav{
+    height: 70px;
+}
+.titulo{
+    font-size: 25px;
+    color: darkcyan;
+    font-family: sans-serif;
+
+}
+
+
+ul,a,li{
+    border-radius: 6px;
+    margin: 8px;
+    font-size: 20px;
+    
+}

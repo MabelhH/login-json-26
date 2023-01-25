@@ -1,6 +1,10 @@
 export interface usuario {
-    id: Number;
-    name: String;
-    username: String;
-    email: String;
+    id: number;
+    name: string;
+    username: string;
+    email: string;
+    phone:number;
+    websate:string;
+    
+    
 }
